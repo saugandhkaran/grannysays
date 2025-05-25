@@ -248,15 +248,15 @@ export const updateTip = async (tipId: string, tipData: {
   }
 
   // Update basic tip data
-  const updatedTip = await prisma.tip.update({
-    where: { id: tipId },
-    data: {
-      title,
-      description,
-      category,
-      lastUpdatedAt: new Date(),
-    },
-  });
+  // const updatedTip = await prisma.tip.update({
+  //   where: { id: tipId },
+  //   data: {
+  //     title,
+  //     description,
+  //     category,
+  //     lastUpdatedAt: new Date(),
+  //   },
+  // });
 
   // Update tags - first delete all existing tags
   await prisma.tipTag.deleteMany({
