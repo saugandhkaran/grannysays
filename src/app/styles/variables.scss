@@ -1,0 +1,67 @@
+// _variables.scss
+
+// Colors
+$primary-color: #8a4747;
+$secondary-color: #2ecc71;
+$text-color: #333;
+$background-color: #f5f5f5;
+
+// Fonts
+$font-size-base: 16px;
+$font-family-base: 'Arial', sans-serif;
+
+// Spacing
+$spacing-unit: 1rem;
+
+$category-colors: (
+  medicine: #5DADE2,
+  lifestyle: #D7BDE2,
+  gardening: #F8C471,
+  food: #F9E79F,
+  productivity: #58D68D,
+  default: #D5DBDB,
+  coral: #F1948A,
+  mint: #A3E4D7,
+  sky-blue: #AED6F1,
+  pink: #F5B7B1,
+  teal: #76D7C4
+);
+
+$category-text-colors: (
+  medicine: #0b2f46,
+  lifestyle: #75667b,
+  gardening: #694814,
+  food: #645519,
+  productivity: #296743,
+  default: #2d2e2e,
+  coral: #774944,
+  mint: #496862,
+  sky-blue: #50626d,
+  pink: #6a4e4c,
+  teal: #305750
+);
+
+$category-medicine: #5DADE2;
+$category-lifestyle: #D7BDE2;
+$category-gardening: #F8C471;
+$category-food: #F9E79F;
+$category-productivity: #58D68D;
+$category-default: #D5DBDB;
+$category-coral: #F1948A;
+$category-mint: #A3E4D7;
+$category-sky-blue: #AED6F1;
+$category-pink: #F5B7B1;
+$category-teal: #76D7C4;
+
+
+// Light Mode Variables
+$light-background: #F7F7F7;
+$light-text: #333333;
+$light-card-bg: #FAF3E0;
+$light-border: #E5E5E5;
+
+// Dark Mode Variables
+$dark-background: #1C1C1E;
+$dark-text: #F0F0F0;
+$dark-card-bg: #2C2C2E;
+$dark-border: #3A3A3C;

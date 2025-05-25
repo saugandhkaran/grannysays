@@ -1,0 +1,18 @@
+@import '../../styles/variables.scss';
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $primary-color;
+  min-height: 50px;
+  color: rgb(247, 231, 231);
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+
+  .footerColumn {
+    display: grid;
+    p {
+      margin: 2px;
+    }
+  }
+}

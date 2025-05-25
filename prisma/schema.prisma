@@ -1,0 +1,49 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Tip {
+  id            String          @id @default(uuid())
+  title         String
+  description   String
+  tipNumber     Int
+  date          DateTime
+  category      String
+  tags          TipTag[]
+  sayings       GrannySaying[]
+  createdAt     DateTime        @default(now())
+  lastUpdatedAt DateTime        @updatedAt
+}
+
+
+model Tag {
+  id    String    @id @default(uuid())
+  name  String    @unique
+  tips  TipTag[]
+}
+
+model TipTag {
+  tipId String
+  tagId String
+
+  tip   Tip   @relation(fields: [tipId], references: [id])
+  tag   Tag   @relation(fields: [tagId], references: [id])
+
+  @@id([tipId, tagId]) // Composite primary key
+}
+
+model GrannySaying {
+  id        String   @id @default(uuid())
+  country   String
+  saying    String
+  verified  Boolean
+  tip       Tip      @relation(fields: [tipId], references: [id])
+  tipId     String
+  updatedAt DateTime @updatedAt
+  createdAt DateTime @default(now())
+}

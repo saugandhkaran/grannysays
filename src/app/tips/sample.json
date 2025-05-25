@@ -1,0 +1,94 @@
+
+{
+  "tips": [
+    {
+      "title": "What should I do if I have cold?",
+      "tags": ["medicine", "health", "remedy"],
+      "tipNumber": 1,
+      "date": "2021-01-01",
+      "category": "medicine",
+      "description": "If you have cold, you should take a rest and drink plenty of water."
+    },
+    {
+      "title": "What should I do if I have fever?",
+      "tags": ["medicine", "health", "remedy"],
+      "tipNumber": 2,
+      "date": "2021-01-02",
+      "category": "default",
+      "description": "If you have fever, you should take a rest. Use a wet cloth to cool your body. Do not drink cold water."
+    },
+    {
+      "title": "What should I do if I have headache?",
+      "tags": ["medicine", "health", "remedy"],
+      "tipNumber": 3,
+      "date": "2021-01-03",
+      "category": "medicine",
+      "description": "If you have headache, try to take a rest and drink plenty of water.",
+      "grannysays": [
+        {
+          "country": "India",
+          "saying": "If you have headache, try to take a rest and drink plenty of water.",
+          "verified": true
+        },
+        {
+          "country": "USA",
+          "saying": "If you have headache, take an aspirin with water",
+          "verified": false
+        },
+        {
+          "country": "Russia",
+          "saying": "If you have headache, drink Vodka",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "title": "What should I do if I have stomachache?",
+      "tags": ["medicine", "health", "remedy"],
+      "tipNumber": 4,
+      "date": "2021-01-04",
+      "category": "lifestyle",
+      "description": "If you have stomachache, try applying heat to your stomach. You can also try taking mustard oil, heat it up and use it to massage your stomach."
+    },
+    {
+      "title": "What should I do to make meat tender without cooker?",
+      "tags": ["meat", "cook"],
+      "tipNumber": 5,
+      "date": "2021-01-05",
+      "category": "food",
+      "description": "You can use raw papaya paste to make meat tender. You can also use vinegar or lemon juice."
+    },
+    {
+      "title": "What should I do if I have cough?",
+      "tags": ["medicine", "health", "remedy"],
+      "tipNumber": 6,
+      "date": "2021-01-06",
+      "category": "medicine",
+      "description": "If you have cough, you should take a rest and drink plenty of water. If you have kerosene, try applying some kerosene to your neck."
+    },
+    {
+      "title": "What should I do balance excess salt in food?",
+      "tags": ["medicine", "health", "remedy"],
+      "tipNumber": 7,
+      "date": "2021-01-07",
+      "category": "food",
+      "description": "If you have added excess salt to your food, you can add some lemon juice or vinegar to balance the taste. Curd also works well."
+    },
+    {
+      "title": "What should I do to increase water intake?",
+      "tags": ["water", "lifetyle"],
+      "tipNumber": 8,
+      "date": "2021-01-08",
+      "category": "lifestyle",
+      "description": "You can add some lemon juice or mint leaves to your water to make it more refreshing. You can also add some fruits like orange or apple to your water."
+    },
+    {
+      "title": "What should I do get rid of pests?",
+      "tags": ["bio", "soil", "nature"],
+      "tipNumber": 9,
+      "date": "2021-01-09",
+      "category": "gardening",
+      "description": "You can use neem oil to get rid of pests. You can also use garlic or onion paste. You can also use a mixture of water and soap."
+    }
+  ]
+}
