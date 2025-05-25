@@ -1,10 +1,11 @@
+import { TipTag } from '@/lib/types';
 import React from 'react';
 
 export interface TipCardProps {
   title: string;
-  tags: string[];
+  tags: TipTag[];
   tipNumber: number;
-  date: string;
+  date: Date;
   category: string;
   onclickfunction?: () => void;
 }

@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         <p>Made with love for grannies</p>
       </div>
       <div className={styles.footerColumn}>
-        <p>Add your granny's tips</p>
+        <p>Add your granny&apos;s tips</p>
       </div>
       <div className={styles.footerColumn}>
         <p>Contact</p>

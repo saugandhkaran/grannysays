@@ -1,0 +1,4 @@
+# Ignore generated Prisma client files
+src/generated/**/*
+node_modules
+.next

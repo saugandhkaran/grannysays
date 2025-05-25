@@ -7,7 +7,6 @@ export interface TipsObject {
   tip: Tip;
   sayings: GrannySaying[];
 }
-
 export interface SlidingDrawerProps {
   tipsObject: TipsObject;
   onClose?: () => void;

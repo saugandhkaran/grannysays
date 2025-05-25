@@ -232,7 +232,7 @@ export const updateTip = async (tipId: string, tipData: {
     verified: boolean;
   }[];
 }) => {
-  const { title, description, category, tags, sayings } = tipData;
+  const { tags, sayings } = tipData;
 
   // First, check if the tip exists
   const existingTip = await prisma.tip.findUnique({

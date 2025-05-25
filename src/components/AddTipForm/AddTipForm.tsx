@@ -1,10 +1,9 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
-import { Tag as TagIcon, PlusCircle } from 'lucide-react';
+import { PlusCircle } from 'lucide-react';
 import { Tip, Tag as TagType, TipTag, GrannySaying, Tag } from '@/lib/types';
 import { motion, AnimatePresence } from 'framer-motion';
-import { format } from 'date-fns';
 import Select from 'react-select';
 import { components } from 'react-select';
 import { countries } from './countries';
@@ -91,11 +90,6 @@ const AddTipForm: React.FC<AddTipFormProps> = ({ existingTip, isEditing = false 
     visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeInOut" } },
   };
 
-    const buttonVariants = {
-        hover: { scale: 1.05 },
-        tap: { scale: 0.95 },
-    };
-
   // Tag selection handler
   const handleTagChange = (tagId: string) => {
     setSelectedTagIds((prevTagIds) =>
@@ -152,7 +146,7 @@ const AddTipForm: React.FC<AddTipFormProps> = ({ existingTip, isEditing = false 
     setSubmissionStatus('idle');
 
     // Construct the tip object (adapt to your actual API)
-    const tipData: any = {
+    const tipData: Partial<Tip> = {
       title,
       description,
       category,

@@ -2,10 +2,10 @@ import { getSayings } from "@/lib/sayings";
 import { getTipById, updateTip } from "@/lib/tips";
 import { NextRequest } from "next/server";
 
-export const GET = async (request: Request, { params }: { params: { slug: string } }) => {
-  const { slug } = params;
+export const GET = async (request: Request, { params }: { params: Promise<{ id: string }> }) => {
+  const { id } = await params;
   try {
-    const tip = await getTipById(slug);
+    const tip = await getTipById(id);
     
     if (!tip) {
       return new Response(JSON.stringify({ error: "Tip not found" }), {
@@ -32,11 +32,11 @@ export const GET = async (request: Request, { params }: { params: { slug: string
   }
 };
 
-export const PUT = async (request: NextRequest, { params }: { params: { slug: string } }) => {
-  const { slug } = params;
+export const PUT = async (request: NextRequest, { params }: { params: Promise<{ id: string }> }) => {
+  const { id } = await params;
   try {
     const data = await request.json();
-    const updatedTip = await updateTip(slug, data);
+    const updatedTip = await updateTip(id, data);
     
     return new Response(JSON.stringify(updatedTip), {
       status: 200,
