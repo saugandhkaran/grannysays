@@ -37,7 +37,7 @@ export const getCategoryColor = (category: string) => {
 }
 
 const TipCard: React.FC<TipCardProps> = (props) => {
-  const { title, tags = [], tipNumber, date, category, onclickfunction } = props;
+  const { title, category, onclickfunction } = props;
   const categoryStyleClass = getCategoryColor(category);
   return (
     <div className={`rounded-lg shadow-md overflow-hidden min-h-32 cursor-pointer ${categoryStyleClass}`} onClick={onclickfunction}>

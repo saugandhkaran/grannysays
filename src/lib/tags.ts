@@ -1,5 +1,4 @@
 import prisma from './db';
-import { Tip, Tag, TipTag, GrannySaying } from './types';
 
 export const getTags = async () => {
   prisma.$connect();
